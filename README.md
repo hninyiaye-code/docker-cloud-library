@@ -8,24 +8,25 @@ The website is served by Nginx inside a Docker container and runs locally on por
 
 The dashboard includes simple library information such as:
 
--Member information
--Total books
--Borrowed books
--Available books
+- Member information
+- Total books
+- Borrowed books
+- Available books
 
 The purpose of this project is to practice Docker, Nginx, Git/GitHub, and basic DevOps workflow skills.
 
 ## Technologies Used
 
--HTML
--CSS
--Docker
--Nginx
--Git
--GitHub
+- HTML
+- CSS
+- Docker
+- Nginx
+- Git
+- GitHub
 
 ## Project Structure
 
+```text
 docker_static_site/
 |
 |---index.html
@@ -33,8 +34,7 @@ docker_static_site/
 |---Dockerfile
 |---README.md
 |---screenshots/
-
-
+```
 ## Screenshots
 
 ### Cloud Library Mini Dashboard
