@@ -71,7 +71,7 @@ bash scripts/deploy.sh
 
 ## Python Health Check
 
-A python script is used to check whether the Cloud Library dashboard is running successfully.
+A Python script is used to check whether the Cloud Library dashboard is running successfully.
 
 Run the script with:
 
