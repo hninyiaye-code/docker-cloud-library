@@ -29,6 +29,13 @@ The purpose of this project is to practice Docker, Nginx, Git/GitHub, and basic 
 ```text
 docker_static_site/
 |
+|---.github/
+|    |--workflows/
+|       |--docker-build.yml
+|---scripts/
+|   |--deploy.sh
+|    |--check_site.py
+|    
 |---index.html
 |---style.css
 |---Dockerfile
@@ -85,5 +92,25 @@ python scripts/check_site.py
 ### Python Health Check
 
 ![Python Health Check](screenshots/python-health-check.png)
+
+## GitHub Actions CI
+
+This project uses GitHub Actions to automatically build the Docker image whenever code is pushed
+to the `main` branch.
+
+The workflow:
+
+- Checks out the repository
+- Builds the Docker image
+- Verifies that the Docker build completes successfully
+
+Workflow file:
+
+```text
+.github/workflows/docker-build.yml
+```
+### GitHub Actions Workflow
+
+![GitHub Actions Success](screenshots/github-actions-success.png)
 
 
