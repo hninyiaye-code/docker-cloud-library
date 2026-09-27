@@ -52,3 +52,38 @@ docker_static_site/
 ### Dockerfile
 
 ![Dockerfile](screenshots/dockerfile.png)
+
+## Bash Automation
+
+A Bash script is used to automate the Docker deployment process.
+
+The script:
+- Builds the Docker image
+- Stops the old container
+- Removes the old container
+- Starts the updated container
+
+Run the script with:
+
+```bash
+bash scripts/deploy.sh
+```
+
+## Python Health Check
+
+A python script is used to check whether the Cloud Library dashboard is running successfully.
+
+Run the script with:
+
+```bash
+python scripts/check_site.py
+```
+### Bash Deployment
+
+![Bash Deployment](screenshots/bash-deploy-success.png)
+
+### Python Health Check
+
+![Python Health Check](screenshots/python-health-check.png)
+
+
